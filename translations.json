@@ -1,0 +1,166 @@
+{
+  "en": {
+    "headTitle": "Pal Portfolio Page",
+    "portfolioName": "Pal Deutsch",
+    "profession": "Customs Agent, Customs Advisor",
+    "licence": {
+      "title": "Licences",
+      "items": [
+        {
+          "title": "AEO authorisation",
+          "date": "September-01-2016",
+          "referenceNumber": "HU AEOC 711000T6000003886",
+          "link": "/img/aeoc_engedely_en.pdf"
+        },
+        {
+          "title": "TST - Application or authorisation for the operation of storage facilities for the temporary storage of goods",
+          "date": "September-07-2017",
+          "referenceNumber": "HUTST721000N7002085803"
+        },
+        {
+          "title": "CW1 - Application or authorisation for the operation of storage facilities for the customs warehousing of goods in a public customs warehouse type I",
+          "date": "October-28-2016",
+          "referenceNumber": "HUCW1721000N6002022000"
+        },
+        {
+          "title": "CGU - Application or authorisation for the provision of a comprehensive guarantee, including possible reduction or waiver",
+          "date": "February-19-2018",
+          "referenceNumber": "HUCGUHU721000-2018-NJA4066"
+        },
+        {
+          "title": "ACR - Application or authorisation for the status of authorised consignor for Union transit",
+          "date": "October-27-2016",
+          "referenceNumber": "HUACR721000N6002021783"
+        },
+        {
+          "title": "SSE - Application or authorisation for the use of seals of a special type",
+          "date": "April-29-2019",
+          "referenceNumber": "HUSSEHU721000-2019-KLP51777"
+        },
+        {
+          "title": "CGU - Application or authorisation for the provision of a comprehensive guarantee, including possible reduction or waiver",
+          "date": "February-19-2018",
+          "referenceNumber": "HUCGUHU721000-2018-NJA4066"
+        },
+        {
+          "title": "EIR - Application or authorisation for making a customs declaration through an entry of data in the declarant's records, including for the export procedure",
+          "date": "June-27-2018",
+          "referenceNumber": "HUEIRHU721000-2018-END12928"
+        },
+        {
+          "title": "CCL - Application or authorisation for centralised clearance",
+          "date": "December-04-2019",
+          "referenceNumber": "HUCCLHU721000-2019-ACW62216"
+        }
+      ]
+    },
+    "service": {
+      "title": "Services"
+    },
+    "aboutMe": {
+      "title": "About Me",
+      "description": "I am a customs agent and advisor with extensive experience in international trade. I provide expert guidance on customs clearance, import/export regulations, and bonded warehousing to support businesses in navigating complex customs procedures."
+    },
+    "exportCustomsClearance": {
+      "title": "Export Customs Clearance",
+      "description": "Export customs clearance is a critical step in international trade, ensuring compliant export procedures. The process involves verifying documentation and adhering to export regulations."
+    },
+    "importCustomsClearance": {
+      "title": "Import Customs Clearance",
+      "description": "Import customs clearance is a crucial process for goods entering a country's borders. The procedure involves customs authority inspection, determining applicable duties, and ensuring compliance with import regulations."
+    },
+    "bondedWarehousing": {
+      "title": "Bonded Warehousing",
+      "description": "Bonded warehousing allows temporary storage of goods with deferred customs payment. This logistics solution provides flexibility in international trade, reducing immediate customs expenses."
+    },
+    "customsAdvice": {
+      "title": "Customs Advice",
+      "description": "Customs advice helps businesses navigate complex customs procedures and regulations. Our experts provide up-to-date guidance to support efficient and compliant international trade."
+    },
+    "contact": {
+      "title": "Contact"
+    }
+  },
+  "hu": {
+    "headTitle": "Pál Portfólió Oldala",
+    "portfolioName": "Deutsch Pál",
+    "profession": "Vámügynök, Vámtanácsadó",
+    "licence": {
+      "title": "Engedélyek",
+      "items": [
+        {
+          "title": "AEO engedély",
+          "date": "2016-Szeptember-01",
+          "referenceNumber": "HU AEOC 711000T6000003886",
+          "link": "/img/aeoc_engedely_hu.pdf"
+        },
+        {
+          "title": "TST - Kérelem vagy engedély átmeneti megőrzés alatti áruk tárolási lehetőségeinek működtetéséhez",
+          "date": "2017-Szeptember-07",
+          "referenceNumber": "HUTST721000N7002085803"
+        },
+        {
+          "title": "CW1 - Kérelem vagy engedély az áruk vámraktárban történő tárolásának tárolási lehetőségeinek működtetésére egy I. típusú közvámraktárban",
+          "date": "2016-Október-28",
+          "referenceNumber": "HUCW1721000N6002022000"
+        },
+        {
+          "title": "ACE - Kérelem vagy engedély az Uniós árutovábbítás engedélyezett címzetti státuszra",
+          "date": "2017-Szeptember-13",
+          "referenceNumber": "HUACE721000N7002086351"
+        },
+        {
+          "title": "ACR - Kérelem vagy engedély az Uniós árutovábbítás engedélyezett feladói státuszra",
+          "date": "2016-Október-27",
+          "referenceNumber": "HUACR721000N6002021783"
+        },
+        {
+          "title": "SSE - Kérelem vagy engedély speciális típusú zárak használatára",
+          "date": "2019-Április-29",
+          "referenceNumber": "HUSSEHU721000-2019-KLP51777"
+        },
+        {
+          "title": "CGU - Kérelem vagy engedély egy összkezesség kiállítására, beleértve a lehetséges csökkentést vagy mentességet",
+          "date": "2018-Február-19",
+          "referenceNumber": "HUCGUHU721000-2018-NJA4066, HUCGU721000N7002085609"
+        },
+        {
+          "title": "EIR - Kérelem vagy engedély vámárunyilatkozat elkészítésére nyilvántartásba történő bejegyzésen keresztül, beleértve a kiviteli eljárást",
+          "date": "2018-Június-27",
+          "referenceNumber": "HUEIRHU721000-2018-END12928"
+        },
+        {
+          "title": "CCL - Kérelem vagy engedély a központi vámkezelés státuszra",
+          "date": "2019-December-04",
+          "referenceNumber": "HUCCLHU721000-2019-ACW62216"
+        }
+      ]
+    },
+    "service": {
+      "title": "Szolgáltatások"
+    },
+    "aboutMe": {
+      "title": "Rólam",
+      "description": "Vámügyintéző és tanácsadóként rendkívüli tapasztalattal rendelkezem a nemzetközi kereskedelemben. Szakértői tanácsokat nyújtok a vámeljárások, import/export szabályozások és vámraktározás területén, hogy segítsem a vállalkozásokat a bonyolult vámeljárások átlátásában."
+    },
+    "exportCustomsClearance": {
+      "title": "Export Vámkezelés",
+      "description": "Az export vámkezelés kritikus lépés a nemzetközi kereskedelemben, amely biztosítja a szabályszerű kivitelt. A folyamat magában foglalja a dokumentációk ellenőrzését és az export előírások betartását."
+    },
+    "importCustomsClearance": {
+      "title": "Import Vámkezelés",
+      "description": "Az import vámkezelés elengedhetetlen folyamat az áruk országhatáron történő beléptetésekor. A folyamat magában foglalja a vámhatósági ellenőrzést, az illetékek megállapítását és a behozatali szabályok betartását."
+    },
+    "bondedWarehousing": {
+      "title": "Vámraktározás",
+      "description": "A vámraktározás lehetővé teszi az áruk átmeneti tárolását a vámfizetés elhalasztása mellett. Ez a logisztikai megoldás rugalmasságot biztosít a nemzetközi kereskedelem során, csökkentve a közvetlen vámköltségeket."
+    },
+    "customsAdvice": {
+      "title": "Vámtanácsadás",
+      "description": "A vámtanácsadás segít a vállalkozásoknak a bonyolult vámeljárások és szabályozások közötti eligazodásban. Szakértőink naprakész tanácsokkal támogatják az ügyfeleket a hatékony és jogszerű nemzetközi kereskedelem érdekében."
+    },
+    "contact": {
+      "title": "Kapcsolat"
+    }
+  }
+}

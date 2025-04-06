@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dp_portfolio
+    stdin_open: true
+    volumes:
+      - .:/var/www/html/dp_portfolio
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.dp_portfolio.rule=Host(`deutschpal.dndnew.hu`)"
+      - "traefik.http.routers.dp_portfolio.entrypoints=websecure"
+      - "traefik.http.routers.dp_portfolio.tls.certresolver=myresolver"
+    ports:
+      - 5501:80
+    networks:
+      - traefik-public
+
+networks:
+  traefik-public:
+    external: true
