@@ -141,15 +141,15 @@
     },
     "aboutMe": {
       "title": "Rólam",
-      "description": "Vámügyintéző és tanácsadóként rendkívüli tapasztalattal rendelkezem a nemzetközi kereskedelemben. Szakértői tanácsokat nyújtok a vámeljárások, import/export szabályozások és vámraktározás területén, hogy segítsem a vállalkozásokat a bonyolult vámeljárások átlátásában."
+      "description": "1992-től foglalkozom vámmal kapcsolatos ügyekkel. Vámügyintéző és vámtanácsadóként azon dolgozom, hogy a velem kapcsolatban álló vállakozások export-import vámeljárások bonyolult rendszerében  minél jobban el tudjanak igazodni és a vámfolyamataik a lehető leghatékonyabbak legyenek. Az alkalmazandó vámeljárások összehangolásának érdekében számos vámhatósági engedélyem van. Egyedüliként rendelkezem olyan Központi vámkezelési engedéllyel melynek keretében Magyarországon kívül hat tagállamba (NL, DE, AT, CZ, SK , BG) csővezetéken szállított földgáz import vámkezelését, míg két tagállamban (SK, BG) export vámkezelését tudom elvégezni. Ezen engedély birtokában a megbízóimra háruló adminisztratív terhet jelentősen tudom csökkenteni. Ezen engedély bővítése LNG és Villamosenergia vonatkozásában folyamatban van."
     },
     "exportCustomsClearance": {
       "title": "Export Vámkezelés",
-      "description": "Az export vámkezelés kritikus lépés a nemzetközi kereskedelemben, amely biztosítja a szabályszerű kivitelt. A folyamat magában foglalja a dokumentációk ellenőrzését és az export előírások betartását."
+      "description": "Az export vámkezelés kritikus lépés a nemzetközi kereskedelemben, amely biztosítja az áruk szabályszerű kiviteli ellenőrzését, kiléptetését. A folyamat magában foglalja a dokumentációk elkészítését, ellenőrzését az exportal kapcsolatos előírások betartását, betartatását."
     },
     "importCustomsClearance": {
       "title": "Import Vámkezelés",
-      "description": "Az import vámkezelés elengedhetetlen folyamat az áruk országhatáron történő beléptetésekor. A folyamat magában foglalja a vámhatósági ellenőrzést, az illetékek megállapítását és a behozatali szabályok betartását."
+      "description": "Az import vámkezelés elengedhetetlen folyamat az áruk országhatáron történő beléptetésekor. A folyamat magában foglalja a vámhatósági ellenőrzést, a vámok és egyéb fizetési kötelezetségek megállapítását az dokumentációk kiállítását, a behozatali szabályok betartását, betartatását."
     },
     "bondedWarehousing": {
       "title": "Vámraktározás",
@@ -157,7 +157,7 @@
     },
     "customsAdvice": {
       "title": "Vámtanácsadás",
-      "description": "A vámtanácsadás segít a vállalkozásoknak a bonyolult vámeljárások és szabályozások közötti eligazodásban. Szakértőink naprakész tanácsokkal támogatják az ügyfeleket a hatékony és jogszerű nemzetközi kereskedelem érdekében."
+      "description": "A vámtanácsadás segít a vállalkozásoknak a bonyolult vámeljárások és szabályozások közötti eligazodásban. Naprakész tanácsokkal támogatom ügyfeleimet a hatékony és jogszerű nemzetközi kereskedelem érdekében."
     },
     "contact": {
       "title": "Kapcsolat"
