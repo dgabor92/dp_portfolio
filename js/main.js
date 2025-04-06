@@ -121,8 +121,11 @@
 
         $("#about-me-title").text(translations[language]["aboutMe"]["title"]);
 
-        $("#about-me-description").text(
-          translations[language]["aboutMe"]["description"]
+        $("#about-me-description").html(
+          translations[language]["aboutMe"]["description"].replace(
+            /\n/g,
+            "<br>"
+          )
         );
 
         $("#service-title").text(translations[language]["service"]["title"]);
@@ -164,7 +167,7 @@
             <div class="col-md-6">
               <div class="exp-col">
                 <span>${item.date}</span>
-                <h3>${item.title}</h3>
+                <h3 >${item.title}</h3>
                 ${referenceHtml}
               </div>
             </div>
