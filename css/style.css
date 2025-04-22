@@ -124,7 +124,7 @@ a:focus {
 
   .wrapper .sidebar {
     position: fixed;
-    width: 300px;
+    width: 270px;
     height: 100%;
     margin-left: -250px;
     float: left;
