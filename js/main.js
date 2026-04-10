@@ -11,7 +11,7 @@
           scrollTop: $(this.hash).offset().top - 30,
         },
         1500,
-        "easeInOutExpo"
+        "easeInOutExpo",
       );
 
       if ($(this).parents(".navbar-nav").length) {
@@ -21,18 +21,6 @@
     }
   });
 
-  // Typed Initiate
-  // if ($('.header h2').length == 1) {
-  //     var typed_strings = $('.header .typed-text').text();
-  //     var typed = new Typed('.header h2', {
-  //         strings: typed_strings.split(', '),
-  //         typeSpeed: 100,
-  //         backSpeed: 20,
-  //         smartBackspace: false,
-  //         loop: true
-  //     });
-  // }
-
   // Skills
   $(".skills").waypoint(
     function () {
@@ -40,7 +28,7 @@
         $(this).css("width", $(this).attr("aria-valuenow") + "%");
       });
     },
-    { offset: "80%" }
+    { offset: "80%" },
   );
 
   // Porfolio isotope and filter
@@ -88,31 +76,31 @@
         $("#head-title").text(translations[language]["headTitle"]);
 
         $("#export-customs-clearance-title").text(
-          translations[language]["exportCustomsClearance"]["title"]
+          translations[language]["exportCustomsClearance"]["title"],
         );
         $("#export-customs-clearance").text(
-          translations[language]["exportCustomsClearance"]["description"]
+          translations[language]["exportCustomsClearance"]["description"],
         );
 
         $("#import-customs-clearance-title").text(
-          translations[language]["importCustomsClearance"]["title"]
+          translations[language]["importCustomsClearance"]["title"],
         );
         $("#import-customs-clearance").text(
-          translations[language]["importCustomsClearance"]["description"]
+          translations[language]["importCustomsClearance"]["description"],
         );
 
         $("#bonded-warehousing-title").text(
-          translations[language]["bondedWarehousing"]["title"]
+          translations[language]["bondedWarehousing"]["title"],
         );
         $("#bonded-warehousing").text(
-          translations[language]["bondedWarehousing"]["description"]
+          translations[language]["bondedWarehousing"]["description"],
         );
 
         $("#customs-advice-title").text(
-          translations[language]["customsAdvice"]["title"]
+          translations[language]["customsAdvice"]["title"],
         );
         $("#customs-advice").text(
-          translations[language]["customsAdvice"]["description"]
+          translations[language]["customsAdvice"]["description"],
         );
 
         $("#portfolio-name").text(translations[language]["portfolioName"]);
@@ -124,8 +112,8 @@
         $("#about-me-description").html(
           translations[language]["aboutMe"]["description"].replace(
             /\n/g,
-            "<br>"
-          )
+            "<br>",
+          ),
         );
 
         $("#service-title").text(translations[language]["service"]["title"]);
@@ -136,22 +124,22 @@
 
         $("#about-nav-link").html(
           translations[language]["aboutMe"]["title"] +
-            ' <i class="fa fa-home"></i>'
+            ' <i class="fa fa-home"></i>',
         );
 
         $("#service-nav-link").html(
           translations[language]["service"]["title"] +
-            ' <i class="fa fa-tasks"></i>'
+            ' <i class="fa fa-tasks"></i>',
         );
 
         $("#licence-nav-link").html(
           translations[language]["licence"]["title"] +
-            ' <i class="fa fa-star"></i>'
+            ' <i class="fa fa-star"></i>',
         );
 
         $("#contact-nav-link").html(
           translations[language]["contact"]["title"] +
-            ' <i class="fa fa-envelope"></i>'
+            ' <i class="fa fa-envelope"></i>',
         );
 
         var licenceData = translations[language]["licence"]["items"];

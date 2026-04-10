@@ -79,6 +79,9 @@
     },
     "contact": {
       "title": "Contact"
+    },
+    "footer": {
+      "text": "© {year} D&DNew Kft. All rights reserved."
     }
   },
   "hu": {
@@ -166,6 +169,9 @@
     },
     "contact": {
       "title": "Kapcsolat"
+    },
+    "footer": {
+      "text": "© {year} D&DNew Kft. Minden jog fenntartva."
     }
   }
 }
