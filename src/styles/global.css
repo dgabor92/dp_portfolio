@@ -1,20 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 
 :root {
-  color-scheme: dark;
-  --bg: #0f1520;
-  --surface: rgba(22, 28, 39, 0.98);
-  --surface-strong: rgba(18, 24, 34, 0.98);
-  --surface-light: rgba(255, 255, 255, 0.05);
-  --line: rgba(255, 255, 255, 0.08);
-  --line-strong: rgba(255, 255, 255, 0.14);
-  --text: #f1eadf;
-  --text-soft: rgba(241, 234, 223, 0.76);
-  --muted: rgba(241, 234, 223, 0.6);
-  --accent: #c9a56a;
-  --accent-soft: rgba(201, 165, 106, 0.16);
-  --accent-strong: #dfc08f;
-  --shadow: 0 16px 42px rgba(0, 0, 0, 0.22);
+  color-scheme: light;
+  --bg: #f5f3ef;
+  --surface: #ffffff;
+  --surface-strong: #edeae4;
+  --surface-light: rgba(0, 0, 0, 0.025);
+  --line: rgba(15, 21, 32, 0.09);
+  --line-strong: rgba(15, 21, 32, 0.16);
+  --text: #0f1520;
+  --text-soft: rgba(15, 21, 32, 0.58);
+  --muted: rgba(15, 21, 32, 0.40);
+  --accent: #a8813a;
+  --accent-soft: rgba(168, 129, 58, 0.10);
+  --accent-strong: #8a6a2e;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.07);
   --radius-xl: 24px;
   --radius-lg: 18px;
   --radius-md: 12px;
@@ -30,21 +31,14 @@
 
 html {
   scroll-behavior: smooth;
-  background:
-    radial-gradient(
-      circle at top left,
-      rgba(201, 165, 106, 0.08),
-      transparent 24%
-    ),
-    radial-gradient(circle at 85% 0%, rgba(90, 124, 187, 0.1), transparent 18%),
-    linear-gradient(180deg, #0b1018 0%, #111823 52%, #0f1520 100%);
+  background: var(--bg);
 }
 
 body {
   margin: 0;
   min-height: 100vh;
   color: var(--text);
-  background: linear-gradient(180deg, #0b1018 0%, #101724 46%, #0f1520 100%);
+  background: var(--bg);
   overflow-x: hidden;
 }
 
@@ -76,6 +70,8 @@ button {
   min-height: 100vh;
 }
 
+/* ── Sidebar — stays dark for professional contrast ── */
+
 .sidebar {
   position: fixed;
   inset: 0 auto 0 0;
@@ -86,7 +82,7 @@ button {
   gap: 1rem;
   height: 100vh;
   padding: 1rem 0.8rem 1rem 1rem;
-  background: transparent;
+  background: #0d1422;
   border-right: 1px solid rgba(255, 255, 255, 0.07);
   z-index: 20;
 }
@@ -114,7 +110,7 @@ button {
   justify-content: space-between;
   width: 100%;
   padding: 0.7rem 0.1rem 0.7rem 0;
-  color: var(--text-soft);
+  color: rgba(241, 234, 223, 0.65);
   background: transparent;
   border: 0;
   border-left: 2px solid rgba(255, 255, 255, 0.07);
@@ -130,9 +126,9 @@ button {
 .sidebar__link:hover,
 .sidebar__link:focus-visible,
 .sidebar__link.is-active {
-  color: var(--text);
-  border-color: rgba(201, 165, 106, 0.42);
-  background: rgba(255, 255, 255, 0.02);
+  color: #f1eadf;
+  border-color: rgba(168, 129, 58, 0.5);
+  background: rgba(255, 255, 255, 0.04);
   transform: translateX(4px);
 }
 
@@ -155,10 +151,10 @@ button {
   gap: 0.7rem;
   width: fit-content;
   padding: 0.78rem 0.95rem;
-  color: var(--bg);
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #0d1422;
+  background: linear-gradient(135deg, #c9a56a, #dfc08f);
   border-radius: 12px;
-  box-shadow: 0 10px 22px rgba(201, 165, 106, 0.16);
+  box-shadow: 0 10px 22px rgba(201, 165, 106, 0.22);
   transition:
     transform 180ms var(--ease-out),
     box-shadow 180ms var(--ease-out);
@@ -167,7 +163,7 @@ button {
 .sidebar__mail:hover,
 .sidebar__mail:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 15px 32px rgba(201, 165, 106, 0.24);
+  box-shadow: 0 15px 32px rgba(201, 165, 106, 0.32);
 }
 
 .sidebar__mail-icon {
@@ -179,6 +175,8 @@ button {
   font-size: 0.92rem;
   font-weight: 700;
 }
+
+/* ── Page layout ── */
 
 .page {
   min-width: 0;
@@ -193,12 +191,20 @@ button {
   padding-inline: clamp(1.2rem, 3vw, 3rem);
 }
 
+/* ── Hero ── */
+
 .hero {
   overflow: clip;
   padding-block: clamp(1.5rem, 2vw, 2rem) clamp(3rem, 7vw, 5rem);
   min-height: 100svh;
   display: flex;
   align-items: center;
+  background: linear-gradient(
+    160deg,
+    #ffffff 0%,
+    #f5f3ef 60%,
+    #ede9e1 100%
+  );
 }
 
 .hero::before {
@@ -207,14 +213,14 @@ button {
   inset: 0;
   background:
     radial-gradient(
-      circle at 18% 18%,
-      rgba(201, 165, 106, 0.1),
-      transparent 26%
+      circle at 12% 20%,
+      rgba(168, 129, 58, 0.07),
+      transparent 30%
     ),
     radial-gradient(
-      circle at 78% 24%,
-      rgba(90, 124, 187, 0.12),
-      transparent 24%
+      circle at 80% 10%,
+      rgba(90, 124, 187, 0.06),
+      transparent 28%
     );
   pointer-events: none;
 }
@@ -249,7 +255,7 @@ button {
   letter-spacing: -0.055em;
   font-weight: 800;
   text-wrap: balance;
-  animation: rise 900ms var(--ease-out) both;
+  animation: rise 700ms var(--ease-out) both;
 }
 
 .hero__profession {
@@ -258,7 +264,7 @@ button {
   font-size: clamp(0.98rem, 1.7vw, 1.22rem);
   line-height: 1.65;
   color: var(--text-soft);
-  animation: rise 900ms 120ms var(--ease-out) both;
+  animation: rise 700ms 100ms var(--ease-out) both;
 }
 
 .hero__visual {
@@ -266,11 +272,10 @@ button {
   width: min(100%, 30rem);
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.02);
-  box-shadow: var(--shadow);
-  transform: translateY(0);
-  animation: floatIn 900ms 180ms var(--ease-out) both;
+  border: 1px solid rgba(15, 21, 32, 0.10);
+  background: var(--surface-strong);
+  box-shadow: var(--shadow-card);
+  animation: floatIn 700ms 160ms var(--ease-out) both;
 }
 
 .hero__image {
@@ -278,11 +283,14 @@ button {
   aspect-ratio: 4 / 5.55;
   object-fit: cover;
   object-position: center top;
-  filter: saturate(0.95) contrast(1.04);
+  filter: saturate(0.96) contrast(1.02);
 }
+
+/* ── Sections ── */
 
 .section {
   padding-block: clamp(3.5rem, 6vw, 5.5rem);
+  border-top: 1px solid var(--line);
 }
 
 .section__inner {
@@ -303,6 +311,7 @@ button {
   font-size: clamp(1.7rem, 2.6vw, 2.3rem);
   line-height: 1.05;
   letter-spacing: -0.04em;
+  font-weight: 800;
 }
 
 .section__heading h2::after {
@@ -322,6 +331,8 @@ button {
   white-space: pre-line;
 }
 
+/* ── About ── */
+
 .about__layout {
   display: grid;
   grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
@@ -333,9 +344,9 @@ button {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.02);
-  box-shadow: var(--shadow);
+  border: 1px solid rgba(15, 21, 32, 0.10);
+  background: var(--surface-strong);
+  box-shadow: var(--shadow-card);
 }
 
 .about__visual::after {
@@ -344,8 +355,8 @@ button {
   inset: 0;
   background: linear-gradient(
     180deg,
-    transparent 42%,
-    rgba(12, 17, 26, 0.22) 100%
+    transparent 50%,
+    rgba(15, 21, 32, 0.08) 100%
   );
   pointer-events: none;
 }
@@ -356,6 +367,8 @@ button {
   object-fit: cover;
   object-position: center top;
 }
+
+/* ── Licences ── */
 
 .licences {
   display: grid;
@@ -371,25 +384,21 @@ button {
   gap: 0.8rem;
   padding: 1.4rem 1.35rem 1.3rem;
   border-radius: 18px;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.05),
-      rgba(255, 255, 255, 0.025)
-    ),
-    rgba(20, 26, 37, 0.98);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: var(--shadow);
-  animation: rise 700ms var(--ease-out) both;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
+  animation: rise 600ms var(--ease-out) both;
   animation-delay: var(--delay);
   transition:
     transform 220ms var(--ease-out),
+    box-shadow 220ms var(--ease-out),
     border-color 220ms var(--ease-out);
 }
 
 .licence-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(255, 255, 255, 0.22);
+  border-color: rgba(168, 129, 58, 0.30);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10);
 }
 
 .licence-card::before {
@@ -397,11 +406,11 @@ button {
   position: absolute;
   inset: 0 auto 0 0;
   width: 4px;
-  background: linear-gradient(180deg, var(--accent), rgba(201, 165, 106, 0.16));
+  background: linear-gradient(180deg, var(--accent), rgba(168, 129, 58, 0.12));
 }
 
 .licence-card__date {
-  color: var(--accent-strong);
+  color: var(--accent);
   font-size: 0.86rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -413,6 +422,7 @@ button {
   font-size: 1.05rem;
   line-height: 1.55;
   letter-spacing: -0.02em;
+  color: var(--text);
 }
 
 .licence-card__reference {
@@ -429,9 +439,12 @@ button {
   padding: 0.62rem 0.9rem;
   border-radius: 12px;
   font-size: 0.88rem;
-  color: var(--bg);
+  font-weight: 600;
+  color: #ffffff;
   background: linear-gradient(135deg, var(--accent), var(--accent-strong));
 }
+
+/* ── Services ── */
 
 .services {
   display: grid;
@@ -447,20 +460,14 @@ button {
   gap: 0.95rem;
   padding: 1.45rem;
   border-radius: 18px;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.05),
-      rgba(255, 255, 255, 0.025)
-    ),
-    rgba(20, 26, 37, 0.96);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: var(--shadow);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
   transition:
     transform 220ms var(--ease-out),
-    border-color 220ms var(--ease-out),
-    background 220ms var(--ease-out);
-  animation: rise 700ms var(--ease-out) both;
+    box-shadow 220ms var(--ease-out),
+    border-color 220ms var(--ease-out);
+  animation: rise 600ms var(--ease-out) both;
   animation-delay: var(--delay);
 }
 
@@ -469,20 +476,14 @@ button {
   position: absolute;
   inset: 0 auto 0 0;
   width: 4px;
-  background: linear-gradient(180deg, var(--accent), rgba(201, 165, 106, 0.16));
+  background: linear-gradient(180deg, var(--accent), rgba(168, 129, 58, 0.12));
 }
 
 .service-card:hover,
 .service-card:focus-within {
   transform: translateY(-4px);
-  border-color: rgba(201, 165, 106, 0.22);
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.06),
-      rgba(255, 255, 255, 0.03)
-    ),
-    rgba(20, 26, 37, 0.98);
+  border-color: rgba(168, 129, 58, 0.30);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10);
 }
 
 .service-card__icon {
@@ -493,7 +494,7 @@ button {
   height: 3rem;
   border-radius: 12px;
   background: var(--accent-soft);
-  color: var(--accent-strong);
+  color: var(--accent);
 }
 
 .service-card__svg {
@@ -506,6 +507,7 @@ button {
   font-size: 1.15rem;
   line-height: 1.35;
   letter-spacing: -0.02em;
+  color: var(--text);
 }
 
 .service-card__copy {
@@ -514,6 +516,8 @@ button {
   line-height: 1.92;
   white-space: pre-line;
 }
+
+/* ── Contact ── */
 
 .contact {
   display: grid;
@@ -527,15 +531,9 @@ button {
   gap: 0.85rem;
   padding: 1.4rem;
   border-radius: 18px;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(168, 34, 34, 0.05),
-      rgba(255, 255, 255, 0.025)
-    ),
-    rgba(20, 26, 37, 0.98);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: var(--shadow);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
 }
 
 .contact__row {
@@ -560,7 +558,7 @@ button {
   height: 1.05rem;
   flex: none;
   margin-top: 0.2rem;
-  color: var(--accent-strong);
+  color: var(--accent);
 }
 
 .contact__badge {
@@ -571,15 +569,9 @@ button {
   min-height: 7.5rem;
   align-self: center;
   border-radius: 18px;
-  background:
-    radial-gradient(
-      circle at 50% 45%,
-      rgba(201, 165, 106, 0.2),
-      transparent 50%
-    ),
-    rgba(20, 26, 37, 0.98);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: var(--shadow);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
   transition: transform 180ms var(--ease-out);
 }
 
@@ -593,9 +585,12 @@ button {
   height: 50px;
 }
 
+/* ── Footer ── */
+
 .footer {
   margin-top: 2rem;
   padding-block: 2.25rem 2.25rem;
+  border-top: 1px solid var(--line);
 }
 
 .footer__inner {
@@ -605,8 +600,8 @@ button {
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
-  color: var(--text-soft);
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--muted);
+  border-top: 1px solid var(--line);
   font-size: 1rem;
   font-weight: 600;
 }
@@ -616,8 +611,10 @@ button {
 }
 
 .footer__inner a {
-  color: var(--text);
+  color: var(--text-soft);
 }
+
+/* ── Back to top ── */
 
 .back-to-top {
   position: fixed;
@@ -631,9 +628,9 @@ button {
   justify-content: center;
   border: 0;
   border-radius: 14px;
-  color: var(--bg);
+  color: #ffffff;
   background: linear-gradient(135deg, var(--accent), var(--accent-strong));
-  box-shadow: 0 12px 28px rgba(201, 165, 106, 0.2);
+  box-shadow: 0 6px 20px rgba(168, 129, 58, 0.28);
   opacity: 0;
   transform: translateY(10px);
   pointer-events: none;
@@ -653,6 +650,8 @@ button {
   height: 1.3rem;
 }
 
+/* ── Utilities ── */
+
 .icon {
   fill: none;
   stroke: currentColor;
@@ -662,10 +661,10 @@ button {
 
 .reveal {
   opacity: 0;
-  transform: translateY(14px);
+  transform: translateY(10px);
   transition:
-    opacity 680ms var(--ease-out),
-    transform 680ms var(--ease-out);
+    opacity 560ms var(--ease-out),
+    transform 560ms var(--ease-out);
 }
 
 .reveal.is-visible {
@@ -673,10 +672,12 @@ button {
   transform: translateY(0);
 }
 
+/* ── Animations ── */
+
 @keyframes rise {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
@@ -687,13 +688,15 @@ button {
 @keyframes floatIn {
   from {
     opacity: 0;
-    transform: translateY(28px) scale(0.98);
+    transform: translateY(20px) scale(0.99);
   }
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
 }
+
+/* ── Responsive: tablet / mobile nav ── */
 
 @media (max-width: 1100px) {
   .sidebar {
@@ -703,9 +706,9 @@ button {
     height: auto;
     min-height: 0;
     padding: 0.7rem 1rem;
-    background: rgba(12, 17, 25, 0.96);
+    background: #0d1422;
     border-right: 0;
-    border-bottom: 1px solid rgba(240, 232, 220, 0.09);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
   }
 
   .sidebar__topbar {
@@ -721,10 +724,10 @@ button {
     width: 3rem;
     height: 3rem;
     padding: 0;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.10);
     border-radius: 12px;
-    color: var(--text);
-    background: rgba(255, 255, 255, 0.03);
+    color: #f1eadf;
+    background: rgba(255, 255, 255, 0.04);
     cursor: pointer;
   }
 
@@ -751,7 +754,7 @@ button {
     max-height: calc(100vh - 4rem);
     overflow: auto;
     padding: 0 1rem 1rem;
-    background: rgba(12, 17, 25, 0.98);
+    background: #0d1422;
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
     opacity: 0;
     pointer-events: none;
