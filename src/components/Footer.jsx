@@ -1,7 +1,7 @@
 export function Footer({ footerText }) {
   return (
     <footer className="footer">
-      <div className="footer__inner">
+      <div className="">
         <p>{footerText}</p>
       </div>
     </footer>
