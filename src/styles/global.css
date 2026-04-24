@@ -18,7 +18,7 @@
   --radius-xl: 24px;
   --radius-lg: 18px;
   --radius-md: 12px;
-  --sidebar-width: 282px;
+  --sidebar-width: 228px;
   --page-max: 1180px;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   font-family: "Manrope", system-ui, sans-serif;
@@ -232,7 +232,7 @@ button {
 
 .hero__about-copy {
   margin: 2rem 0 0;
-  color: var(--text-soft);
+  color: var(--text);
   font-size: 0.99rem;
   line-height: 1.9;
   white-space: pre-line;
@@ -305,6 +305,15 @@ button {
   letter-spacing: -0.04em;
 }
 
+.section__heading h2::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin-top: 0.6rem;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
 .section__copy {
   margin: 0;
   color: var(--text-soft);
@@ -369,10 +378,18 @@ button {
       rgba(255, 255, 255, 0.025)
     ),
     rgba(20, 26, 37, 0.98);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: var(--shadow);
   animation: rise 700ms var(--ease-out) both;
   animation-delay: var(--delay);
+  transition:
+    transform 220ms var(--ease-out),
+    border-color 220ms var(--ease-out);
+}
+
+.licence-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.22);
 }
 
 .licence-card::before {
@@ -423,6 +440,8 @@ button {
 }
 
 .service-card {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 0.95rem;
@@ -435,7 +454,7 @@ button {
       rgba(255, 255, 255, 0.025)
     ),
     rgba(20, 26, 37, 0.96);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: var(--shadow);
   transition:
     transform 220ms var(--ease-out),
@@ -443,6 +462,14 @@ button {
     background 220ms var(--ease-out);
   animation: rise 700ms var(--ease-out) both;
   animation-delay: var(--delay);
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--accent), rgba(201, 165, 106, 0.16));
 }
 
 .service-card:hover,
@@ -542,7 +569,7 @@ button {
   justify-content: center;
   width: 7.5rem;
   min-height: 7.5rem;
-  align-self: end;
+  align-self: center;
   border-radius: 18px;
   background:
     radial-gradient(

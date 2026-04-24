@@ -1,6 +1,6 @@
 export const portraits = {
-  hero: new URL("../../img/DP_2.JPG", import.meta.url).href,
-  about: new URL("../../img/DP_4.JPG", import.meta.url).href,
+  hero: new URL("../../img/hero.webp", import.meta.url).href,
+  about: new URL("../../img/about.webp", import.meta.url).href,
   logo: new URL("../../img/vjaszsz.png", import.meta.url).href,
 };
 

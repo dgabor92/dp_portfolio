@@ -25,7 +25,16 @@ export default function App() {
   useEffect(() => {
     document.documentElement.lang = locale;
     document.title = content.headTitle;
-  }, [content.headTitle, locale]);
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", content.headDescription);
+    document
+      .querySelector('meta[property="og:title"]')
+      ?.setAttribute("content", content.headTitle);
+    document
+      .querySelector('meta[property="og:description"]')
+      ?.setAttribute("content", content.headDescription);
+  }, [content.headTitle, content.headDescription, locale]);
 
   useEffect(() => {
     const onScroll = () => {

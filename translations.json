@@ -1,6 +1,7 @@
 {
   "en": {
-    "headTitle": "Pal Portfolio Page",
+    "headTitle": "Deutsch Pál – Customs Agent & Advisor",
+    "headDescription": "Customs Agent and Customs Advisor with over 30 years of experience. Expert guidance on customs clearance, import/export regulations, and bonded warehousing.",
     "portfolioName": "Pal Deutsch",
     "profession": "Customs Agent, Customs Advisor",
     "licence": {
@@ -85,7 +86,8 @@
     }
   },
   "hu": {
-    "headTitle": "Pál Portfólió Oldala",
+    "headTitle": "Deutsch Pál – Vámügynök és Vámtanácsadó",
+    "headDescription": "Vámügynök és vámtanácsadó, több mint 30 év tapasztalattal. Szakértői segítség export-import vámkezelésben, vámraktározásban és vámtanácsadásban.",
     "portfolioName": "Deutsch Pál",
     "profession": "Vámügynök, Vámtanácsadó",
     "licence": {
